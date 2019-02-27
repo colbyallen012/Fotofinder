@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title>Fotofinder</title>
+      <link rel="stylesheet" type="text/css" href="normalize.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+  <body>
+    <header class="header-bar">
+      <h1>FOTO<img class="camera" src="images/foto-finder-logo.svg" height="50px" width="50px">FINDER</h1>
+      <div class="search-box">
+        <input type="search" class="search-input" placeholder="Search">
+        <button type="button" class="search-btn"><img class="magnify-glass" src="images/magnify-glass.svg" height="25px" width="25px"></button>
+      </div>
+    </header>
+    <main>
+      <div class="new-foto-form">
+        <section class="form-section">
+          <form name="newFoto" class="foto-form">
+            <label for="new-title">Title</label>
+            <input type="text" id="new-title" class="foto-title-input">
+            <label for="new-caption">Caption</label>
+            <input type="text" class="foto-caption-input" id="new-caption">
+            <input type="file" name="file" id="file" class="choose-file"/>
+            <label class="choose-foto" for="file">Choose file</label>
+            <div class="small-btns">
+              <button type ="button" class="view-favorites">View Favorites</button>
+              <button type="button" class="add-to-album">Add to Album</button>
+            </div>
+          </form>
+        </section>
+      </div>
+      <section class="card-area">
+      </section>
+      <section class="btn-div">
+       <button type="button" class="show-btn hidden">Show More...</button>
+      </section>
+      <script type="text/javascript" src="photo.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+    </main>
+  </body>
+  </html>

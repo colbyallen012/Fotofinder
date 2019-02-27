@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  outline-color: grey;
+}
+
+body {
+  color: color: #7c7879;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+
+/*header*/
+
+header {
+  align-items: center;
+  background-color: #3E2A35;
+  display: flex;
+  height: 90px;
+}
+
+h1 {
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+
+img.camera {
+  margin: 0px 10px 0px 10px;
+  padding-top: 15px;
+}
+
+.search-box {
+  align-items: center;
+  display: flex;
+  flex: 25%;
+  justify-content: flex-end;
+  margin: 10px 50px 0px 0px;
+}
+
+input.search-input {
+  border-radius: 5px 0px 0px 5px;
+  border: 0px;
+  height: 31px;
+}
+
+button.search-btn {
+  background-color: #d2cccd;
+  border-radius: 0px 5px 5px 0px;
+  height: 31px;
+}
+
+img.magnify-glass {
+  padding: 2px 0px 2px 0px;
+}
+
+/*---------------Input Area---------------*/
+.new-foto-form {
+  background-color: #3E2A35;
+  width: 100%;
+}
+
+label {
+  align-items: flex-start;
+  color: #938284;
+  margin: 10px 0px 10px 0px;
+  width: 75%;
+}
+
+form.foto-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+input.foto-title-input, .foto-caption-input{
+  height: 45px;
+  justify-content: center;
+  width: 75%;
+}
+
+
+.choose-file {
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0.1px;
+  z-index: -1;
+}
+
+.choose-file + .choose-foto {
+  background-color: #5B4447;
+  color: #FFFFFF;
+  cursor: pointer;
+  height: 50px;
+  margin: 30px 0px 30px 0px;
+  padding-top: 10px;
+  text-align: center;
+  width: 75%;
+}
+
+.choose-file + .choose-foto:hover {
+  background-color: #938284;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 75%;
+}
+
+.small-btns {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+button.view-favorites, .add-to-album {
+  background-color: #5B4447;
+  border: none;
+  color: #FFFFFF; 
+  cursor: pointer;
+  font-size: 18px;
+  width: 40%;
+}
+
+button.view-favorites:hover, .add-to-album:hover {
+  background-color: #938284;
+  color: #FFFFFF;
+}
+
+/*---------------Card Area---------------*/
+
+section.card-area {
+  background-color: #C2B2B4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px 40px 40px 100px;
+}
+
+article.card {
+  border: solid 2px #C2B2B4;
+  height: 100%;
+  margin: 15px;
+  width: 250px;
+}
+
+h2{
+  background-color: #FFFFFF;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 10px;
+}
+
+img.card-image {
+  height: 300px;
+  width: 100%;
+}
+
+p {
+  background-color: #FFFFFF;
+  font-size: 20px;
+  font-weight:  normal;
+  margin: 0px;
+  padding: 10px;
+}
+
+footer.card-footer {
+  background-color: #5B4447;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+img.delete-btn {
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  margin: 15px 10px 10px 15px;
+  width: 40px;
+}
+
+.favorite-svg, .favorite-active-svg {
+  background-repeat: no-repeat;
+  height: 40px;
+  margin: 18px 15px 10px 5px;
+  padding: 0px;
+  width: 40px;
+}
+
+.favorite-svg {
+  background-color: #5B4447;
+  background-image: url("images/favorite.svg");
+  border: none;
+}
+
+.favorite-active-svg {
+  background-image: url('images/favorite-active.svg');
+}
+
+section.btn-div {
+  background-color: #C2B2B4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+button.show-btn {
+  background-color: #5B4447;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  height: 50px;
+  width:40%;
+}
+
+button.show-btn:hover {
+  background-color: #3E2A35;
+}
+
+.hide-card {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 100%;
+  }
+  .search-box {
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    width: 90%;
+  }
+  h1 {
+    font-size: 40px;
+    margin: 0px;
+    text-align: center;
+    width: 90%;
+  }
+
+  input.search-input {
+    width: 50%;
+  }
+
+  form.foto-form {
+    margin: 0px;
+    width: 100%;
+  }
+
+  section.card-area {
+    justify-content: space-around;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  img.camera {
+    height: 30px;
+    padding-top: 5px;
+    padding: 0px;
+    width: 30px;
+  }
+
+input.search-input {
+  width: 70%;
+}
